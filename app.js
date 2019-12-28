@@ -17,8 +17,10 @@ const flash= require('connect-flash');
 
 //Seed the database
 //seedDB();
-
-mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true });
+console.log(process.env.DATABASEURL)
+// mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true });
+mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });
+//mongoose.connect("mongodb+srv://sameed:Sameed@2000@yelpcamp-7evdf.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
@@ -52,7 +54,7 @@ app.use("/campgrounds",campgroundRoutes);
 app.use("/campgrounds/:id/comments",commentRoutes);
 
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 1000;
 
 app.listen(port,()=>{
 	console.log("server is running");

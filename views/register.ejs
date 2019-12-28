@@ -1,0 +1,36 @@
+<% include ./partials/header.ejs %>
+
+
+<div class="container">
+	<div class="row">
+		
+	
+	<h1 style="text-align:center">
+	Sign Up
+</h1>
+<div style='width:30%;margin:25px auto'>
+<form action="/login" method="POST">
+	<div class="form-group">
+		<label for="username" style="font-size:17px;">Username</label>
+		<input class="form form-control input-lg" type="text" name="username" placeholder="username">
+	</div>
+	<div class="form-group">
+		<label for="password" style="font-size:17px;">Password</label>
+		<input type="password" class="form form-control input-lg" name="password" placeholder="password">
+	</div>
+	<div class='form-group'>
+					<button class="btn btn-lg btn-primary btn-block">Sign Up
+		</button>
+				</div>
+	
+</form>
+	
+	</div>
+</div>
+</div>
+
+
+
+
+
+<% include ./partials/footer.ejs %>

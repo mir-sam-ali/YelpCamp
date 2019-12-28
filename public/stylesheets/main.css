@@ -1,0 +1,23 @@
+.thumbnail img{
+	width: 100%;
+}
+
+.thumbnail{
+	padding: 0%;
+}
+
+.thumbnail .caption-full{
+	padding: 9px;
+}
+
+#username{
+	font-size: 1.1em;
+	color: #333;
+	text-transform: capitalize;
+}
+.delete-form{
+	display: inline;
+	padding-left:5px;
+	
+	
+}

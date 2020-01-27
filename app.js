@@ -18,7 +18,7 @@ const flash= require('connect-flash');
 //Seed the database
 //seedDB();
 console.log(process.env.DATABASEURL)
-// mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true });
 mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true });
 //mongoose.connect("mongodb+srv://sameed:Sameed@2000@yelpcamp-7evdf.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true });
 
